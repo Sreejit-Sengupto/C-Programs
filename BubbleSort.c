@@ -19,7 +19,7 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < 5; i++) // For loop to track counter.
     {
         isSwapped = 0; // Changing the value to zero if the value of isSwapped turns to 1.
-        for (int j = 1; j < 5; j++)
+        for (int j = 1; j < 5 - i; j++)
         {
             if (array[j] < array[j - 1]) // Checking if the previous element is smaller than the current element or not.
             {
