@@ -4,6 +4,15 @@
 
 #include <stdio.h>
 
+int fibo(int n)
+{
+    if (n < 2)
+    {
+        return n;
+    }
+    return fibo(n - 1) + fibo(n - 2);
+}
+
 int main(int argc, char const *argv[])
 {
     //* User input.
@@ -29,6 +38,7 @@ int main(int argc, char const *argv[])
         count++;          // Incrementing count.
         printf("%d ", b); // Printing the series.
     }
+    printf("%d", fibo(n));
 
     return 0;
 }
